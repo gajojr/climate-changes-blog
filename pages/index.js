@@ -61,25 +61,25 @@ export default function Home() {
         </p>
         <div className={styles.imagesHolder}>
           <div className={styles.imageHolder}>
-            <div id="freiburg" className={styles.smallImg} onMouseOver={() => {
+            <div id="park" className={styles.smallImg} onMouseOver={() => {
               const styleElem = document.head.appendChild(document.createElement("style"));
-              styleElem.innerHTML = "#freiburg:after {content: 'Gde treba da budemo';}";
+              styleElem.innerHTML = "#park:after {content: 'Na sta se ponosimo';}";
             }}>
-              <img style={{width: '100%'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZg6oiOYSNpl0CoCKFehzgxZhqJr0yV-Y4WA&usqp=CAU" alt="Freiburg, Nemacka"/>
+              <img style={{width: '100%'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmD95EFT9ip3yTA8jK-OW29ne1T7u9nXdlFw&usqp=CAU" alt="Cacak, park"/>
             </div>
             <p className={styles.description}>
-              - Freiburg, Nemacka
+              - Cacak, park
             </p>
           </div>
           <div className={styles.imageHolder}>
-            <div id="cacak" className={styles.smallImg} onMouseOver={() => {
+            <div id="centar-grada" className={styles.smallImg} onMouseOver={() => {
                 const styleElem = document.head.appendChild(document.createElement("style"));
-                styleElem.innerHTML = "#cacak:after {content: 'Gde smo trenutno';}";
+                styleElem.innerHTML = "#centar-grada:after {content: 'Cega treba da se stidimo';}";
               }}>
-                <img style={{width: '100%'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiodBkHgo_boG-7axMfOxfSAuEPDYZ8Jp2MA&usqp=CAU" alt="Cacak, Srbija"/>
+                <img style={{width: '100%'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiodBkHgo_boG-7axMfOxfSAuEPDYZ8Jp2MA&usqp=CAU" alt="Cacak, centar grada"/>
             </div>
             <p className={styles.description}>
-              - Cacak, Srbija
+              - Cacak, centar grada
             </p>
           </div>
         </div>
