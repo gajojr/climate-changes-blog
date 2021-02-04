@@ -84,7 +84,7 @@
 
 .img::after,
 .smallImg::after {
-    content: 'Da li cemo ziveti na levoj ili na desnoj strani zavisi od naseg ophodjenja prema prirodi!';
+    content: '';
     position: absolute;
     left: 0;
     top: 0;

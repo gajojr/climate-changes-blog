@@ -24,8 +24,11 @@ export default function Home() {
         <p className={styles.description}>
         Glavni problem je nedovoljno razvijena ljudska svest i nemogucnost ljudi da sagledaju situaciju na duze staze; Ljudima je bitno da njihov zivot bude ugodan, a da pritom ne misle na buduce generacije, zato se i ne vodi racuna o prirodi i ljudi bacaju smece gde stignu, unistavaju se sume radi izgradnje industijskih objekata, puteva itd. U ovu kategoriju takodje spadaju automobili, ali sa pojavom elektricnih automobila ocekujemo da ce zagadjenje biti znacajno manje. Previse uzimamo od prirode, ne nudeci nista za uzvrat, tako krseci zakon ravnoteze koji je kljucan da bi se odrzao zivot, ljudi uzimaju daleko vise nego sto im je potrebno da bi nahranili svoj ego ili ispunili dusevnu prazninu. To nas moze kostati iz razloga sto su prirodni resursi ograniceni i ako svi budu uzimali vise nego sto im je potrebno unistice prirodu u celini. Smatram da situacija koja se trenutno odigrava u svetu, u vezi sa COVID 19, ima veze sa tim da se smiri ljudska rasa. U toku pandemije smo videli da se moze ziveti i bez ogromnih guzvi u saobracaju, proslava i putovanja, samim tim nasa planeta je “predahnula”, vazduh je postao cistiji i ljudi nisu mogli da unistavaju prirodu u meri u kojoj to obicno rade. Takodje smatram da su sve ostale bolesti i ostale “nepogode” samo upozerenje prirode da bi se ljudi urazumili.
         </p>
-        <div className={styles.img}>
-          <img style={{width: '100%'}} src="https://www.kurir.rs/data/images/2018/03/23/18/1440221_kli_ls.jpg" alt="slika planete"/>
+        <div id="zagadjena-planeta" className={styles.img} onMouseOver={() => {
+          const styleElem = document.head.appendChild(document.createElement("style"));
+          styleElem.innerHTML = "#zagadjena-planeta:after {content: 'Da li cemo ziveti na levoj ili na desnoj strani zavisi od naseg ophodjenja prema prirodi!';}";
+        }}>
+          <img style={{width: '100%'}} src="https://www.kurir.rs/data/images/2018/03/23/18/1440221_kli_ls.jpg" alt="zagadjena suma"/>
         </div>
         <p className={styles.description}>
           * slika preuzeta sa kurir.rs
